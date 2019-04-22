@@ -10,3 +10,5 @@ $res = mysqli_query($con,$sql);
 echo "Hi Aftab";
 
 ?>
+
+#https://www.guru99.com/auto-increment.html
