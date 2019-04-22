@@ -1,0 +1,12 @@
+<?php
+
+$user = 'root';
+$pass = '';
+$db = 'ha';
+$con = new mysqli('localhost', $user, $pass, $db) or die("Unable to connect");
+$sql = "INSERT INTO `users` (`id`, `user`) VALUES (NULL, 'Archana')";
+$res = mysqli_query($con,$sql);
+
+echo "Hi Aftab";
+
+?>
