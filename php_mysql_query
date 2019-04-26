@@ -4,10 +4,10 @@ $user = 'root';
 $pass = '';
 $db = 'ha';
 $con = new mysqli('localhost', $user, $pass, $db) or die("Unable to connect");
-$sql = "INSERT INTO `users` (`id`, `user`) VALUES (NULL, 'Archana')";
+$sql = "INSERT INTO `users` (`id`, `user`) VALUES (NULL, 'username')";
 $res = mysqli_query($con,$sql);
 
-echo "Hi Aftab";
+echo "Data inserted";
 
 ?>
 
