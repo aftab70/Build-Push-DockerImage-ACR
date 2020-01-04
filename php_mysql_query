@@ -12,3 +12,30 @@ echo "Data inserted";
 ?>
 
 #https://www.guru99.com/auto-increment.html
+
+
+
+How to create tables;
+
+CREATE TABLE `users1` (
+  `id` int(11) AUTO_INCREMENT,
+  `users` varchar(150) DEFAULT NULL,
+  `users1` varchar(150) DEFAULT NULL,
+  `users2` varchar(150) DEFAULT NULL,
+  `users3` varchar(150) DEFAULT NULL,
+  `users4` varchar(150) DEFAULT NULL,
+  `users5` varchar(150) DEFAULT NULL,
+  `users6` varchar(150) DEFAULT NULL,
+  `users7` varchar(150) DEFAULT NULL,
+  `users8` varchar(150) DEFAULT NULL,
+  `users9` varchar(150) DEFAULT NULL,
+  `users19` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+show to add data in table
+
+INSERT INTO `users1` (`id`, `users`, `users1`, `users2`, `users3`, `users4`, `users5`, `users6`, `users7`, `users8`, `users9`, `users19` ) VALUES (NULL, 'username', 'username1', 'username1', 'username2', 'username2', 'username3', 'username4', 'username1', 'username1', 'username2', 'username11') ;
+
+
