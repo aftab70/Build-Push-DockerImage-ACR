@@ -39,3 +39,22 @@ show to add data in table
 INSERT INTO `users1` (`id`, `users`, `users1`, `users2`, `users3`, `users4`, `users5`, `users6`, `users7`, `users8`, `users9`, `users19` ) VALUES (NULL, 'username', 'username1', 'username1', 'username2', 'username2', 'username3', 'username4', 'username1', 'username1', 'username2', 'username11') ;
 
 
+
+
+<?php
+
+$user = 'xyz';
+$pass = 'xyz';
+$db = 'xzy';
+$con = new mysqli('0.0.0.0.:3306', $user, $pass, $db) or die("Unable to connect");
+
+$x = 1;
+while($x <= 1000000) {
+     $sql = "INSERT INTO `users1` (`id`, `users`, `users1`, `users2`, `users3`, `users4`, `users5`, `users6`, `users7`, `users8`, `users9`, `users19` ) VALUES (NULL, 'username', 'username1', 'username1', 'username2', 'username2', 'username3', 'username4', 'username1', 'username1', 'username2', 'username11') ";      
+     $res = mysqli_query($con,$sql);     
+     $x+=1;
+}
+     
+echo "Data inserted";
+
+?>
