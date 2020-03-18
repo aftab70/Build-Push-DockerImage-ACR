@@ -1,0 +1,113 @@
+<?php
+
+$user = 'root';
+$pass = '';
+$db = 'ha';
+$con = new mysqli('localhost', $user, $pass, $db) or die("Unable to connect");
+$sql = "INSERT INTO `users` (`id`, `user`) VALUES (NULL, 'username')";
+$res = mysqli_query($con,$sql);
+
+echo "Data inserted";
+
+?>
+
+#https://www.guru99.com/auto-increment.html
+
+
+
+How to create tables;
+
+CREATE TABLE `users1` (
+  `id` int(11) AUTO_INCREMENT,
+  `users` varchar(150) DEFAULT NULL,
+  `users1` varchar(150) DEFAULT NULL,
+  `users2` varchar(150) DEFAULT NULL,
+  `users3` varchar(150) DEFAULT NULL,
+  `users4` varchar(150) DEFAULT NULL,
+  `users5` varchar(150) DEFAULT NULL,
+  `users6` varchar(150) DEFAULT NULL,
+  `users7` varchar(150) DEFAULT NULL,
+  `users8` varchar(150) DEFAULT NULL,
+  `users9` varchar(150) DEFAULT NULL,
+  `users19` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+show to add data in table
+
+INSERT INTO `users1` (`id`, `users`, `users1`, `users2`, `users3`, `users4`, `users5`, `users6`, `users7`, `users8`, `users9`, `users19` ) VALUES (NULL, 'username', 'username1', 'username1', 'username2', 'username2', 'username3', 'username4', 'username1', 'username1', 'username2', 'username11') ;
+
+
+
+
+<?php
+
+$user = 'xyz';
+$pass = 'xyz';
+$db = 'xzy';
+$con = new mysqli('0.0.0.0.:3306', $user, $pass, $db) or die("Unable to connect");
+
+$x = 1;
+while($x <= 1000000) {
+     $sql = "INSERT INTO `users1` (`id`, `users`, `users1`, `users2`, `users3`, `users4`, `users5`, `users6`, `users7`, `users8`, `users9`, `users19` ) VALUES (NULL, 'username', 'username1', 'username1', 'username2', 'username2', 'username3', 'username4', 'username1', 'username1', 'username2', 'username11') ";      
+     $res = mysqli_query($con,$sql);     
+     $x+=1;
+}
+     
+echo "Data inserted";
+
+?>
+
+
+
+<?php
+
+$user = 'xyz';
+$pass = 'xyz';
+$db = 'xzy';
+$con = new mysqli('0.0.0.0.:3306', $user, $pass, $db) or die("Unable to connect");
+
+$x = 1;
+
+
+while($x <= 1000000) {
+$username = 'aftab'.$x;
+     $sql = "INSERT INTO `users1` (`id`, `users`, `users1`, `users2`, `users3`, `users4`, `users5`, `users6`, `users7`, `users8`, `users9`, `users19` ) VALUES (NULL, '$username', '$username', '$username', '$username', '$username', '$username', '$username', '$username', '$username', '$username', '$username') ";      
+     $res = mysqli_query($con,$sql);    
+     $x+=1;
+}
+     
+echo "Data inserted";
+
+?>
+
+
+
+
+CREATE USER 'aftab' IDENTIFIED BY 'aftab';
+
+GRANT USAGE ON *.* TO 'aftab'@'%' IDENTIFIED BY 'aftab';
+
+GRANT ALL privileges ON *.* TO 'aftab'@'%';
+
+
+
+CREATE TABLE `MOVIES` (
+  `id` int(11) AUTO_INCREMENT,
+  `TITLE` varchar(150) DEFAULT NULL,
+  `DIRECTOR` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+INSERT INTO `MOVIES` (`TITLE`, `DIRECTOR`) VALUES ('Thugs of Hindostan', 'Vijay Krishna Acharya') ;
+INSERT INTO `MOVIES` (`TITLE`, `DIRECTOR`) VALUES ('Saathiya', 'Shaad Ali') ;
+INSERT INTO `MOVIES` (`TITLE`, `DIRECTOR`) VALUES ('Bunty Aur Bablin', 'Shaad Ali') ;
+INSERT INTO `MOVIES` (`TITLE`, `DIRECTOR`) VALUES ('Jhoom Barabar Jhoom', 'Shaad Ali') ;
+INSERT INTO `MOVIES` (`TITLE`, `DIRECTOR`) VALUES ('Kill Dil', 'Shaad Ali') ;
+INSERT INTO `MOVIES` (`TITLE`, `DIRECTOR`) VALUES ('Chak De! India', 'Shimit Amin') ;
+INSERT INTO `MOVIES` (`TITLE`, `DIRECTOR`) VALUES ('Rocket Singh: Salesman of the Year', 'Shimit Amin') ;
+INSERT INTO `MOVIES` (`TITLE`, `DIRECTOR`) VALUES ('Salaam Namaste', 'Siddharth Anand') ;
+INSERT INTO `MOVIES` (`TITLE`, `DIRECTOR`) VALUES ('Ta Ra Rum Pum', 'Siddharth Anand') ;
+
+
