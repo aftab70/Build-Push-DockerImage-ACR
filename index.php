@@ -1,3 +1,8 @@
+<?php
+$localIP = getHostByName(getHostName());  
+echo "You are connected with " .$localIP;
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +43,6 @@ button:hover, a:hover {
 </head>
 <body>
 <h3 style="text-align:center">Congratulations you have successfully deployed your PHP project. </h3>
-<?php $localIP = getHostByName(getHostName()); echo $localIP; ?>
 <h2 style="text-align:center">Get connect with me</h2>
 
 <div class="card">
