@@ -1,8 +1,3 @@
-<?php
-$localIP = getHostByName(getHostName());  
-echo "You are connected with " .$localIP;
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
