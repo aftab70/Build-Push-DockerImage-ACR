@@ -43,6 +43,11 @@ button:hover, a:hover {
 </head>
 <body>
 <h3 style="text-align:center">Congratulations you have successfully deployed your PHP project. </h3>
+<h3 style="text-align:center"> <?php
+$localIP = getHostByName(getHostName());
+echo "You are connected with " .$localIP;
+?></h3>
+
 <h2 style="text-align:center">Get connect with me</h2>
 
 <div class="card">
