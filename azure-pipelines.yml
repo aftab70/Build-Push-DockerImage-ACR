@@ -27,7 +27,7 @@ steps:
     targetType: 'inline'
     script: |
       # Write your commands here
-      cp -ivr target/* /home/vsts/work/1/a
+      cp -ivr *.php /home/vsts/work/1/a
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
