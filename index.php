@@ -49,13 +49,13 @@ echo "You are connected with " .$localIP;
   <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG9fcKbkqESuQ/profile-displayphoto-shrink_200_200/0/1641650801312?e=1658361600&v=beta&t=AOrlPXU43gtL0Aqr0Wa6KaRpGSJTLVwxAyLfmFfifCY" alt="" style="width:100%">
   <h1>Aftab Ali</h1>
   <p> Cloud and DevOps consultant </p>
-  <p> Connted with US region </p>
+  <p> Connted with ASIA region </p>
   <div style="margin: 24px 0;"> 
     <a href="https://www.facebook.com/aftab.shaikh.589"><i class="fa fa-facebook"></i></a>  
     <a href="https://www.linkedin.com/in/aftab-shaikh-035440118/"><i class="fa fa-linkedin"></i></a>  
     <a href="https://twitter.com/aftab70_ali"><i class="fa fa-twitter"></i></a> 
   </div>
-  <p><button>Email Id - aftab70@ymail.comm</button></p>
+  <p><button>Email Id - aftab70@ymail.com</button></p>
 </div>
 
 </body>
