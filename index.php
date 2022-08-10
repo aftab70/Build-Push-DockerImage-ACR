@@ -46,7 +46,7 @@ echo "You are connected with " .$localIP;
 <h2 style="text-align:center">Get connect with me</h2>
 
 <div class="card">
-  <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG9fcKbkqESuQ/profile-displayphoto-shrink_200_200/0/1641650801312?e=1658361600&v=beta&t=AOrlPXU43gtL0Aqr0Wa6KaRpGSJTLVwxAyLfmFfifCY" alt="" style="width:100%">
+  <img src="	https://media-exp1.licdn.com/dms/image/C4D03AQG5fx…eta&t=hEn0QnbowlUQJKjQ9MfYvh5r2gMqIVd9__gehY0eeBE" alt="" style="width:100%">
   <h1>Aftab Ali</h1>
   <p> Cloud and DevOps consultant </p>
   <p> Deployed uisng Azure v3 </p>
