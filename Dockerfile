@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y apache2 php 
 RUN rm /var/www/htmp.index.html
