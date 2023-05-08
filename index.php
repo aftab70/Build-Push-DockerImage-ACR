@@ -49,7 +49,7 @@ echo "You are connected with " .$localIP;
   <img src="	https://media-exp1.licdn.com/dms/image/C4D03AQG5fx…eta&t=hEn0QnbowlUQJKjQ9MfYvh5r2gMqIVd9__gehY0eeBE" alt="" style="width:100%">
   <h1>Aftab Ali</h1>
   <p> Cloud and DevOps consultant </p>
-  <p> Deployed uisng Azure v3 </p>
+  <p> Deployed uisng Azure v4 </p>
   <div style="margin: 24px 0;"> 
     <a href="https://www.facebook.com/aftab.shaikh.589"><i class="fa fa-facebook"></i></a>  
     <a href="https://www.linkedin.com/in/aftab-shaikh-035440118/"><i class="fa fa-linkedin"></i></a>  
