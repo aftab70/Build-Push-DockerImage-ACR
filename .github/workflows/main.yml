@@ -39,10 +39,10 @@ jobs:
           tags: aftab70.azurecr.io/myapache:latest  #${{ github.run_number }}
           file: Dockerfile
           
-      #- name: ‘Login to Azure’
-      #  uses: azure/login@v1
-      #  with:
-      #    creds: ${{ secrets.AZURE_CREDENTIALS }}      
+      - name: ‘Login to Azure’
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}      
           
       #-  name: 'Deploy to Azure Container Instances'
       #   uses: 'azure/aci-deploy@v1'
@@ -56,3 +56,10 @@ jobs:
       #    registry-password: ${{ secrets.REGISTRY_PASSWORD }}
       #    name: aftabwebserver
       #    location: 'central india'     
+      
+      - name: Azure CLI script
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.30.0
+          inlineScript: |
+            az container restart --name aftab70 --resource-group terraform-rg
