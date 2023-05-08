@@ -39,20 +39,20 @@ jobs:
           tags: aftab70.azurecr.io/myapache:${{ github.run_number }}
           file: Dockerfile
           
-      - name: ‘Login to Azure’
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}      
+      #- name: ‘Login to Azure’
+      #  uses: azure/login@v1
+      #  with:
+      #    creds: ${{ secrets.AZURE_CREDENTIALS }}      
           
-      -  name: 'Deploy to Azure Container Instances'
-         uses: 'azure/aci-deploy@v1'
-         with:
-          resource-group: TestGroup
-          dns-name-label: aftab70
-          image: aftab70.azurecr.io/myapache:${{ github.run_number }}
-          cpu: 1
-          memory: 1
-          registry-username: ${{ secrets.REGISTRY_USERNAME }}
-          registry-password: ${{ secrets.REGISTRY_PASSWORD }}
-          name: aftabwebserver
-          location: 'central india'     
+      #-  name: 'Deploy to Azure Container Instances'
+      #   uses: 'azure/aci-deploy@v1'
+      #   with:
+      #    resource-group: TestGroup
+      #    dns-name-label: aftab70
+      #    image: aftab70.azurecr.io/myapache:${{ github.run_number }}
+      #    cpu: 1
+      #    memory: 1
+      #    registry-username: ${{ secrets.REGISTRY_USERNAME }}
+      #    registry-password: ${{ secrets.REGISTRY_PASSWORD }}
+      #    name: aftabwebserver
+      #    location: 'central india'     
