@@ -57,7 +57,7 @@ jobs:
       #    name: aftabwebserver
       #    location: 'central india'     
       
-      - name: Azure CLI script
+      - name: Updating ACI image
         uses: azure/CLI@v1
         with:
           azcliversion: 2.30.0
